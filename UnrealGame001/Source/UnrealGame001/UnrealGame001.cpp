@@ -4,3 +4,5 @@
 #include "Modules/ModuleManager.h"
 
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, UnrealGame001, "UnrealGame001" );
+
+DEFINE_LOG_CATEGORY(Game);

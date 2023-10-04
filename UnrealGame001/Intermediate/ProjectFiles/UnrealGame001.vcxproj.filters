@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealGame001.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E82F5581-1FBD-4CCA-B192-20670F6AD8A3}</UniqueIdentifier>
+      <UniqueIdentifier>{87FD6510-8AA4-4C55-B830-4525F21DEDE8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealGame001.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{541EB551-98CF-40AA-91A6-42151F4A45FE}</UniqueIdentifier>
+      <UniqueIdentifier>{2A8389C0-1D07-429A-8AA4-8D0EF64D2D12}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\UnrealGame001">
-      <UniqueIdentifier>{C022D89D-D1E6-46B5-8F86-DBB971CA2CB1}</UniqueIdentifier>
+      <UniqueIdentifier>{5AA1DC42-DEA2-498E-8194-A878A6E04DEA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealGame001\UnrealGame001.Build.cs">
       <Filter>Source\UnrealGame001</Filter>
@@ -35,11 +38,41 @@
     <ClInclude Include="..\..\Source\UnrealGame001\UnrealGame001.h">
       <Filter>Source\UnrealGame001</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\UnrealGame001\UnrealGame001GameModeBase.cpp">
-      <Filter>Source\UnrealGame001</Filter>
+    <Filter Include="Source\UnrealGame001\Private">
+      <UniqueIdentifier>{D09EF711-F3FB-4210-8DC0-98E6423D6C97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealGame001\Private\Actors">
+      <UniqueIdentifier>{9875AE4D-47F7-414C-BDD1-E1B4B0CFCFF2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\Actors\BaseCharacter.cpp">
+      <Filter>Source\UnrealGame001\Private\Actors</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\UnrealGame001\UnrealGame001GameModeBase.h">
-      <Filter>Source\UnrealGame001</Filter>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\Actors\BasePlayer.cpp">
+      <Filter>Source\UnrealGame001\Private\Actors</Filter>
+    </ClCompile>
+    <Filter Include="Source\UnrealGame001\Private\Core">
+      <UniqueIdentifier>{7F73F079-CE39-4017-A6A2-A326D3C702E9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\Core\BaseCharacterEventGraph.cpp">
+      <Filter>Source\UnrealGame001\Private\Core</Filter>
+    </ClCompile>
+    <Filter Include="Source\UnrealGame001\Public">
+      <UniqueIdentifier>{D364A349-4460-4378-BF11-6E64F35E1885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealGame001\Public\Actors">
+      <UniqueIdentifier>{250E323E-D743-4D63-94C9-216D8A3C120B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\Actors\BaseCharacter.h">
+      <Filter>Source\UnrealGame001\Public\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\Actors\BasePlayer.h">
+      <Filter>Source\UnrealGame001\Public\Actors</Filter>
+    </ClInclude>
+    <Filter Include="Source\UnrealGame001\Public\Core">
+      <UniqueIdentifier>{B93BE7D0-56C3-4C22-8069-D50ACC775171}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\Core\BaseCharacterEventGraph.h">
+      <Filter>Source\UnrealGame001\Public\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

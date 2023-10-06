@@ -22,6 +22,15 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
 	float Direction;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	bool DebugFire;
+
+	UFUNCTION()
+	void PersonaUpdate();
+
+	UFUNCTION()
+	void FireAnimation();
 
 	UAnimInstance* animinstance = this->animinstance;
 	

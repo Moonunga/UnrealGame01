@@ -7,3 +7,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseCharacter.generated.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Private\Actors\../../Public/Actors/BaseRifle.h
+D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseRifle.generated.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Private\Actors\../../UnrealGame001.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Private\Actors\../../Public//Core/BaseCharacterEventGraph.h
+D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseCharacterEventGraph.generated.h

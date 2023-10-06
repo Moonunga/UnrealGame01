@@ -20,3 +20,16 @@ void UBaseCharacterEventGraph::NativeUpdateAnimation(float DeltaSeconds)
 		//Is not Valid
 	}
 }
+
+void UBaseCharacterEventGraph::PersonaUpdate()
+{
+	if (DebugFire)
+		FireAnimation();
+}
+
+void UBaseCharacterEventGraph::FireAnimation()
+{
+
+}
+
+

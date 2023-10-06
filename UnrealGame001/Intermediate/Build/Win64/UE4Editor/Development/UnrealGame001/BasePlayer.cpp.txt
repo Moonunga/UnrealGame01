@@ -13,3 +13,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerInput.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\GestureRecognizer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\KeyState.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerInput.generated.h

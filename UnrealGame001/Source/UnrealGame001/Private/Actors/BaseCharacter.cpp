@@ -2,6 +2,11 @@
 
 
 #include "Actors/BaseCharacter.h"
+#include "Components/ChildActorComponent.h"
+#include "../../Public/Actors/BaseRifle.h"
+#include "../../UnrealGame001.h"
+#include "../../Public//Core/BaseCharacterEventGraph.h"
+
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -10,6 +15,10 @@ ABaseCharacter::ABaseCharacter()
 	PrimaryActorTick.bStartWithTickEnabled = false;
 	GetMesh()->SetRelativeLocation(FVector(0.f, 0.f, -90.f));
 	GetMesh()->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
+
+	WeaponChildActorComponent = CreateDefaultSubobject<UChildActorComponent>(TEXT("WeaponChildActorComponent"));
+	WeaponChildActorComponent->SetupAttachment(GetMesh(), FName("WeaponSocket"));
+
 }
 
 // Called when the game starts or when spawned
@@ -17,6 +26,25 @@ void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	WeaponChildActorComponent->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform,FName("WeaponSocket"));
+	WeaponChildActorComponent->SetChildActorClass(WeaponClass);
+	CurrentWeapon = Cast<ABaseRifle>(WeaponChildActorComponent->GetChildActor());
+
+	if (!CurrentWeapon)
+	{
+		UE_LOG(Game, Error, TEXT("Fail WeaponCast"));
+		Destroy();
+	}
+
+	AnimBP = Cast<UBaseCharacterEventGraph>(GetMesh()->GetAnimInstance());
+	if (!AnimBP)
+	{
+		UE_LOG(Game, Error, TEXT("Fail AnimInstanceCast"));
+		Destroy();
+	}
+		
+
+
 }
 
 // Called every frame
@@ -31,5 +59,13 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ABaseCharacter::CharacterAttack()
+{
+	//weapon attack
+	CurrentWeapon->Attack();
+	
+	//fire animation
 }
 

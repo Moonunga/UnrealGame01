@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UNREALGAME001_BaseCharacterEventGraph_generated_h
 
 #define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_SPARSE_DATA
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFireAnimation); \
+	DECLARE_FUNCTION(execPersonaUpdate);
+
+
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFireAnimation); \
+	DECLARE_FUNCTION(execPersonaUpdate);
+
+
 #define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBaseCharacterEventGraph(); \
@@ -62,7 +72,8 @@ public: \
 
 #define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Speed); } \
-	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Direction); }
+	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Direction); } \
+	FORCEINLINE static uint32 __PPO__DebugFire() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DebugFire); }
 
 
 #define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_12_PROLOG

@@ -4,17 +4,24 @@
 #include "Actors/BasePlayer.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "GameFramework/PlayerInput.h"
 
 
 ABasePlayer::ABasePlayer()
 {
+	//parent construction??
+	
+	//Springarm setting
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
-	SpringArm->SetRelativeLocation(FVector(0.f,0.f,60.f));
+	SpringArm->SetupAttachment(RootComponent);
+	SpringArm->SetRelativeLocation(FVector(0.f, 0.f, 60.f));
 	SpringArm->bUsePawnControlRotation = true;
+	
 
 	//Camera Setting
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm);
+	
 	
 }
 
@@ -33,6 +40,19 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	//Player Move Right
 	PlayerInputComponent->BindAxis("Right", this, &ABasePlayer::InputAxisRight);
+
+	//Attack
+	UPlayerInput::AddEngineDefinedActionMapping(FInputActionKeyMapping(FName("Attack"),EKeys::LeftMouseButton));
+	PlayerInputComponent->BindAction("Attack",EInputEvent::IE_Pressed,this,&ABaseCharacter::CharacterAttack);
+
+	//Jump
+	UPlayerInput::AddEngineDefinedActionMapping(FInputActionKeyMapping(FName("Jump"), EKeys::SpaceBar));
+	PlayerInputComponent->BindAction("Jump",EInputEvent::IE_Pressed,this,&ACharacter::Jump);
+}
+
+void ABasePlayer::BeginPlay()
+{
+	Super::BeginPlay();
 }
 
 void ABasePlayer::InputAxisForward(float AxisValue)

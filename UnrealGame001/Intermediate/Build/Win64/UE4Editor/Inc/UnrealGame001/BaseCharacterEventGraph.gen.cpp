@@ -19,8 +19,72 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
 	UPackage* Z_Construct_UPackage__Script_UnrealGame001();
 // End Cross Module References
+	DEFINE_FUNCTION(UBaseCharacterEventGraph::execFireAnimation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->FireAnimation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UBaseCharacterEventGraph::execPersonaUpdate)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->PersonaUpdate();
+		P_NATIVE_END;
+	}
 	void UBaseCharacterEventGraph::StaticRegisterNativesUBaseCharacterEventGraph()
 	{
+		UClass* Class = UBaseCharacterEventGraph::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "FireAnimation", &UBaseCharacterEventGraph::execFireAnimation },
+			{ "PersonaUpdate", &UBaseCharacterEventGraph::execPersonaUpdate },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Core/BaseCharacterEventGraph.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBaseCharacterEventGraph, nullptr, "FireAnimation", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Core/BaseCharacterEventGraph.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBaseCharacterEventGraph, nullptr, "PersonaUpdate", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UBaseCharacterEventGraph_NoRegister()
 	{
@@ -29,6 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 	struct Z_Construct_UClass_UBaseCharacterEventGraph_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -40,6 +105,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Direction_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Direction;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DebugFire_MetaData[];
+#endif
+		static void NewProp_DebugFire_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_DebugFire;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -47,6 +117,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 	UObject* (*const Z_Construct_UClass_UBaseCharacterEventGraph_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UAnimInstance,
 		(UObject* (*)())Z_Construct_UPackage__Script_UnrealGame001,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UBaseCharacterEventGraph_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UBaseCharacterEventGraph_FireAnimation, "FireAnimation" }, // 2842336337
+		{ &Z_Construct_UFunction_UBaseCharacterEventGraph_PersonaUpdate, "PersonaUpdate" }, // 1428446510
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBaseCharacterEventGraph_Statics::Class_MetaDataParams[] = {
@@ -70,9 +144,21 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_Direction = { "Direction", nullptr, (EPropertyFlags)0x0020080000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBaseCharacterEventGraph, Direction), METADATA_PARAMS(Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_Direction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_Direction_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire_MetaData[] = {
+		{ "Category", "BaseCharacterEventGraph" },
+		{ "ModuleRelativePath", "Public/Core/BaseCharacterEventGraph.h" },
+	};
+#endif
+	void Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire_SetBit(void* Obj)
+	{
+		((UBaseCharacterEventGraph*)Obj)->DebugFire = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire = { "DebugFire", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UBaseCharacterEventGraph), &Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire_SetBit, METADATA_PARAMS(Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBaseCharacterEventGraph_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_Speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_Direction,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterEventGraph_Statics::NewProp_DebugFire,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBaseCharacterEventGraph_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBaseCharacterEventGraph>::IsAbstract,
@@ -82,11 +168,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UBaseCharacterEventGraph_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UBaseCharacterEventGraph_Statics::PropPointers),
 		0,
 		0x009000A8u,
@@ -101,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterEventGraph() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBaseCharacterEventGraph, 1062168383);
+	IMPLEMENT_CLASS(UBaseCharacterEventGraph, 1127861841);
 	template<> UNREALGAME001_API UClass* StaticClass<UBaseCharacterEventGraph>()
 	{
 		return UBaseCharacterEventGraph::StaticClass();

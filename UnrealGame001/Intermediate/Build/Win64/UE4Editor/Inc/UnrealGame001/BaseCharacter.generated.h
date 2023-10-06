@@ -58,7 +58,13 @@ public: \
 	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ABaseCharacter)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_PRIVATE_PROPERTY_OFFSET
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__WeaponChildActorComponent() { return STRUCT_OFFSET(ABaseCharacter, WeaponChildActorComponent); } \
+	FORCEINLINE static uint32 __PPO__WeaponClass() { return STRUCT_OFFSET(ABaseCharacter, WeaponClass); } \
+	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(ABaseCharacter, CurrentWeapon); } \
+	FORCEINLINE static uint32 __PPO__AnimBP() { return STRUCT_OFFSET(ABaseCharacter, AnimBP); }
+
+
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_9_PROLOG
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

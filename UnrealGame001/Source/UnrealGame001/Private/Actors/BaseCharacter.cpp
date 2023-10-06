@@ -6,6 +6,7 @@
 #include "../../Public/Actors/BaseRifle.h"
 #include "../../UnrealGame001.h"
 #include "../../Public//Core/BaseCharacterEventGraph.h"
+#include "../../Public/Components/HealthComponent.h"
 
 
 // Sets default values
@@ -18,6 +19,8 @@ ABaseCharacter::ABaseCharacter()
 
 	WeaponChildActorComponent = CreateDefaultSubobject<UChildActorComponent>(TEXT("WeaponChildActorComponent"));
 	WeaponChildActorComponent->SetupAttachment(GetMesh(), FName("WeaponSocket"));
+
+	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 
 }
 
@@ -67,5 +70,7 @@ void ABaseCharacter::CharacterAttack()
 	CurrentWeapon->Attack();
 	
 	//fire animation
+	AnimBP->FireAnimation();
+
 }
 

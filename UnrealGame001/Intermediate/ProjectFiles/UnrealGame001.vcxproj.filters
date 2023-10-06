@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealGame001.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8AEB7906-B6EE-40D3-B8AA-B960975C2EB7}</UniqueIdentifier>
+      <UniqueIdentifier>{2BA13696-3561-4589-A9C9-2AE1BE7A0058}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealGame001.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0AA8B0EA-5FF1-45D3-ACCC-4C178735DC26}</UniqueIdentifier>
+      <UniqueIdentifier>{464088E3-7EBB-4EED-830B-5AC143F88887}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealGame001">
-      <UniqueIdentifier>{AB0114D3-E61F-483C-9CD3-0F4616DCD659}</UniqueIdentifier>
+      <UniqueIdentifier>{F34CE96F-1D2D-423E-BB86-AA2E1D794A3C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealGame001\UnrealGame001.Build.cs">
       <Filter>Source\UnrealGame001</Filter>
@@ -39,10 +39,10 @@
       <Filter>Source\UnrealGame001</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Private">
-      <UniqueIdentifier>{8148E415-20BF-416A-8B25-6BE0542D2C6F}</UniqueIdentifier>
+      <UniqueIdentifier>{0A8D2326-8DAD-4D3E-90B5-D2D26B9644AC}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\UnrealGame001\Private\Actors">
-      <UniqueIdentifier>{27C98EF6-127B-4AF4-9ED2-D9A14B1EFC0B}</UniqueIdentifier>
+      <UniqueIdentifier>{B7684014-F1AD-4D85-96FD-64F3C7270DD7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Actors\BaseBullet.cpp">
       <Filter>Source\UnrealGame001\Private\Actors</Filter>
@@ -56,17 +56,23 @@
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Actors\BaseRifle.cpp">
       <Filter>Source\UnrealGame001\Private\Actors</Filter>
     </ClCompile>
+    <Filter Include="Source\UnrealGame001\Private\Components">
+      <UniqueIdentifier>{911F1507-980D-4E42-964C-8837D3CC02E7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\Components\HealthComponent.cpp">
+      <Filter>Source\UnrealGame001\Private\Components</Filter>
+    </ClCompile>
     <Filter Include="Source\UnrealGame001\Private\Core">
-      <UniqueIdentifier>{4645471B-C729-431B-A2CD-E8BEEAA91173}</UniqueIdentifier>
+      <UniqueIdentifier>{241AD2EA-EEF0-4734-AA00-DC7A8885FCD7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Core\BaseCharacterEventGraph.cpp">
       <Filter>Source\UnrealGame001\Private\Core</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Public">
-      <UniqueIdentifier>{BEDDB0B8-B6A9-49EB-A9B8-61DAA831BC76}</UniqueIdentifier>
+      <UniqueIdentifier>{E3E559BD-E6C5-4DB2-9A63-6395FC21FEB5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\UnrealGame001\Public\Actors">
-      <UniqueIdentifier>{A423B0D3-3685-4557-B080-3FB70F42935E}</UniqueIdentifier>
+      <UniqueIdentifier>{D69266E0-96D5-467D-A479-96E7522D915A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Actors\BaseBullet.h">
       <Filter>Source\UnrealGame001\Public\Actors</Filter>
@@ -80,8 +86,14 @@
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Actors\BaseRifle.h">
       <Filter>Source\UnrealGame001\Public\Actors</Filter>
     </ClInclude>
+    <Filter Include="Source\UnrealGame001\Public\Components">
+      <UniqueIdentifier>{0CD189A3-2540-42F8-A865-C4DF6067A21E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\Components\HealthComponent.h">
+      <Filter>Source\UnrealGame001\Public\Components</Filter>
+    </ClInclude>
     <Filter Include="Source\UnrealGame001\Public\Core">
-      <UniqueIdentifier>{D209E8DE-062C-4C3C-9315-A66E83433E0A}</UniqueIdentifier>
+      <UniqueIdentifier>{847E97FE-37E2-493E-B572-2ABC4CD58BFB}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Core\BaseCharacterEventGraph.h">
       <Filter>Source\UnrealGame001\Public\Core</Filter>

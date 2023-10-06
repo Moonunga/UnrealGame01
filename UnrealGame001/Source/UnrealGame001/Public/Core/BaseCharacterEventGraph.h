@@ -29,9 +29,15 @@ protected:
 	UFUNCTION()
 	void PersonaUpdate();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName ActionSlotName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimSequenceBase* FireAsset;
+
+public:
+
 	UFUNCTION()
 	void FireAnimation();
 
-	UAnimInstance* animinstance = this->animinstance;
-	
 };

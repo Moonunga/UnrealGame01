@@ -12,24 +12,29 @@ void UBaseCharacterEventGraph::NativeUpdateAnimation(float DeltaSeconds)
 	{
 		//Is Valid
 		Speed = Pawn->GetVelocity().Size();
-		Direction = animinstance->CalculateDirection(Pawn->GetVelocity(), Pawn->GetActorRotation());
+		Direction = CalculateDirection(Pawn->GetVelocity(), Pawn->GetActorRotation());
 
 	}
 	else
 	{
 		//Is not Valid
+		PersonaUpdate();
 	}
 }
 
 void UBaseCharacterEventGraph::PersonaUpdate()
 {
 	if (DebugFire)
+	{
 		FireAnimation();
+		DebugFire = false;
+	}
+		
 }
 
 void UBaseCharacterEventGraph::FireAnimation()
 {
-
+	PlaySlotAnimationAsDynamicMontage(FireAsset,ActionSlotName);
 }
 
 

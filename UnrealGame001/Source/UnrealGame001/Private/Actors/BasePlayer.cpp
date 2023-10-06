@@ -10,13 +10,13 @@
 ABasePlayer::ABasePlayer()
 {
 	//parent construction??
-	
+
+
 	//Springarm setting
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
-	SpringArm->SetRelativeLocation(FVector(0.f, 0.f, 60.f));
+	SpringArm->SetRelativeLocation(FVector(0.f, 80.f, 90.f));
 	SpringArm->bUsePawnControlRotation = true;
-	
 
 	//Camera Setting
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));

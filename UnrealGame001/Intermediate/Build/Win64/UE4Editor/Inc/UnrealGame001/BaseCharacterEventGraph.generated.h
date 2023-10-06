@@ -73,7 +73,9 @@ public: \
 #define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Speed); } \
 	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Direction); } \
-	FORCEINLINE static uint32 __PPO__DebugFire() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DebugFire); }
+	FORCEINLINE static uint32 __PPO__DebugFire() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DebugFire); } \
+	FORCEINLINE static uint32 __PPO__ActionSlotName() { return STRUCT_OFFSET(UBaseCharacterEventGraph, ActionSlotName); } \
+	FORCEINLINE static uint32 __PPO__FireAsset() { return STRUCT_OFFSET(UBaseCharacterEventGraph, FireAsset); }
 
 
 #define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_12_PROLOG

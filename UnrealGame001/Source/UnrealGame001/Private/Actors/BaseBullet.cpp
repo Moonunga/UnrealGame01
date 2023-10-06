@@ -6,6 +6,8 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Kismet/GameplayStatics.h"
+
 
 
 // Sets default values
@@ -30,6 +32,10 @@ ABaseBullet::ABaseBullet()
 	Mesh->SetStaticMesh(SphereAsset.Object);
 
 	Mesh->SetCollisionProfileName("NoCollision");
+
+	Collision->SetWorldScale3D(FVector(0.2f, 0.2f, 0.2f));
+
+	BaseDamage = 1.0f;
 }
 
 // Called when the game starts or when spawned
@@ -37,9 +43,6 @@ void ABaseBullet::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	FVector scale = { 0.2f,0.2f,0.2f };
-	Collision->SetWorldScale3D(scale);
-
 	// Destroy base on timer
 	FTimerHandle handle;
 	GetWorld()->GetTimerManager().SetTimer(handle,this, &ABaseBullet::K2_DestroyActor,3.f);
@@ -57,6 +60,7 @@ void ABaseBullet::Tick(float DeltaTime)
 
 void ABaseBullet::HandleOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	UGameplayStatics::ApplyDamage(OtherActor,BaseDamage,GetInstigatorController(),GetInstigator(),nullptr);
 	Destroy();
 }
 

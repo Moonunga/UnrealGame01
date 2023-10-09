@@ -34,11 +34,30 @@ void ABaseRifle::BeginPlay()
 
 void ABaseRifle::Attack()
 {
-	FActorSpawnParameters SpawnParams;
-	SpawnParams.Owner = nullptr;
-	SpawnParams.Instigator = ParentPawn;
+	if (canAttack())
+	{
 
-	GetWorld()->SpawnActor<ABaseBullet>(BulletClass, Mesh->GetSocketLocation(SocketName),ParentPawn->GetBaseAimRotation(), SpawnParams);
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.Owner = nullptr;
+		SpawnParams.Instigator = ParentPawn;
+
+		GetWorld()->SpawnActor<ABaseBullet>(BulletClass, Mesh->GetSocketLocation(SocketName), ParentPawn->GetBaseAimRotation(), SpawnParams);
+
+		busy = true;
+
+		FTimerHandle handle;
+		GetWorld()->GetTimerManager().SetTimer(handle, this, &ABaseRifle::finishAttack, 2.f);
+	}
+}
+
+bool ABaseRifle::canAttack()
+{
+	return !busy;
+}
+
+void ABaseRifle::finishAttack()
+{
+	busy = false;
 }
 
 // Called every frame

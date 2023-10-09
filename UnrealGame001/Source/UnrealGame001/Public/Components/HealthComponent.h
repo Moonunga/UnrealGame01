@@ -6,6 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "HealthComponent.generated.h"
 
+// Create Event Dispatch
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVariableDelegate, float, Amount);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class UNREALGAME001_API UHealthComponent : public UActorComponent
@@ -26,12 +28,22 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float MaxHealth;
 
+	
+
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	
+	// Naming Event Dispatch
+	UPROPERTY()
+	FVariableDelegate OnHurt;
+
+	UPROPERTY()
+	FVariableDelegate OnDeath;
 
 private:
 	UFUNCTION()
 	void HandleTakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 		
+
 };

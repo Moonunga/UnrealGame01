@@ -29,6 +29,14 @@ protected:
 	UPROPERTY(EditAnywhere)
 	class UCameraComponent* Camera;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSubclassOf<class UWidgetHUD> WidgetClass;
+
+	UPROPERTY()
+	class UWidgetHUD* HUDWidget;	
+
+
+
 private:
 	void InputAxisForward(float AxisValue);
 

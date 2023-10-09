@@ -33,6 +33,7 @@ protected:
 
 	APawn* ParentPawn;
 
+	bool busy = false;
 
 public:	
 	// Called every frame
@@ -41,4 +42,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Attack();
 
+private:
+	bool canAttack();
+
+	void finishAttack();
 };

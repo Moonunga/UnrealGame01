@@ -31,6 +31,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UBaseCharacterEventGraph* AnimBP;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UHealthComponent* HealthComponent;
 
 public:	

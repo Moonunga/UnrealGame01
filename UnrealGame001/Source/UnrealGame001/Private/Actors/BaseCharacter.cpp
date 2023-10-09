@@ -46,7 +46,8 @@ void ABaseCharacter::BeginPlay()
 		Destroy();
 	}
 		
-
+	//Delegate healthComponent Event
+ 	//HealthComponent->OnHurt.AddDynamic(this,)
 
 }
 

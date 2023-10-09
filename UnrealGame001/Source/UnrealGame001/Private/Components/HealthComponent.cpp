@@ -45,10 +45,14 @@ void UHealthComponent::HandleTakeDamage(AActor* DamagedActor, float Damage, cons
 	if (CurrentHealth > 0.0f)
 	{
 		//call hurt
+		OnHurt.Broadcast(CurrentHealth / MaxHealth);
 	}
 	else
 	{
-		//unbind
+		// Unbind
+		GetOwner()->OnTakeAnyDamage.RemoveDynamic(this, &UHealthComponent::HandleTakeDamage);
+		// call death
+		OnDeath.Broadcast(0.0f);
 	}
 
 }

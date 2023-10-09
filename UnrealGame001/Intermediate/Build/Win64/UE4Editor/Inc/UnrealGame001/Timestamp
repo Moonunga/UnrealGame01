@@ -1,6 +1,8 @@
 D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors\BaseBullet.h
 D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors\BaseCharacter.h
 D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors\BasePlayer.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Components\HealthComponent.h
 D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Core\BaseCharacterEventGraph.h
 D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors\BaseRifle.h
-D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Components\HealthComponent.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Widgets\WidgetHUD.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors\BaseAI.h

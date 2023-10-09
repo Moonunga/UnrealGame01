@@ -60,7 +60,9 @@ public: \
 
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BasePlayer_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(ABasePlayer, SpringArm); } \
-	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(ABasePlayer, Camera); }
+	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(ABasePlayer, Camera); } \
+	FORCEINLINE static uint32 __PPO__WidgetClass() { return STRUCT_OFFSET(ABasePlayer, WidgetClass); } \
+	FORCEINLINE static uint32 __PPO__HUDWidget() { return STRUCT_OFFSET(ABasePlayer, HUDWidget); }
 
 
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BasePlayer_h_13_PROLOG

@@ -5,6 +5,9 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/PlayerInput.h"
+#include "../../UnrealGame001.h"
+#include "../../Public/Widgets/WidgetHUD.h"
+#include "../../Public/Components/HealthComponent.h"
 
 
 ABasePlayer::ABasePlayer()
@@ -53,7 +56,31 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 void ABasePlayer::BeginPlay()
 {
 	Super::BeginPlay();
+
+	APlayerController* owner = Cast<APlayerController>(GetController());
+
+	if (!owner)
+	{
+		UE_LOG(Game, Error, TEXT("Fail CastPlayerController"));
+		Destroy();
+	}
+
+	HUDWidget = CreateWidget<UWidgetHUD>(owner, WidgetClass);
+
+	if (!HUDWidget)
+	{
+		Destroy();
+	}
+
+	HUDWidget->AddToViewport();
+	
+	//OnHurt delegate
+	HealthComponent->OnHurt.AddDynamic(HUDWidget, &UWidgetHUD::SetHealth);
+
+	//OnDeath delegate
+	HealthComponent->OnDeath.AddDynamic(HUDWidget, &UWidgetHUD::SetHealth);
 }
+	
 
 void ABasePlayer::InputAxisForward(float AxisValue)
 {

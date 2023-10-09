@@ -62,7 +62,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__WeaponChildActorComponent() { return STRUCT_OFFSET(ABaseCharacter, WeaponChildActorComponent); } \
 	FORCEINLINE static uint32 __PPO__WeaponClass() { return STRUCT_OFFSET(ABaseCharacter, WeaponClass); } \
 	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(ABaseCharacter, CurrentWeapon); } \
-	FORCEINLINE static uint32 __PPO__AnimBP() { return STRUCT_OFFSET(ABaseCharacter, AnimBP); }
+	FORCEINLINE static uint32 __PPO__AnimBP() { return STRUCT_OFFSET(ABaseCharacter, AnimBP); } \
+	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ABaseCharacter, HealthComponent); }
 
 
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_9_PROLOG

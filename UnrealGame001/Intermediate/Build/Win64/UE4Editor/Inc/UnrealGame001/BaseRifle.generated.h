@@ -13,18 +13,35 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UNREALGAME001_BaseRifle_generated_h
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_SPARSE_DATA
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_RPC_WRAPPERS \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_9_DELEGATE \
+struct _Script_UnrealGame001_eventRifleDelegate_Parms \
+{ \
+	float Amount; \
+}; \
+static inline void FRifleDelegate_DelegateWrapper(const FMulticastScriptDelegate& RifleDelegate, float Amount) \
+{ \
+	_Script_UnrealGame001_eventRifleDelegate_Parms Parms; \
+	Parms.Amount=Amount; \
+	RifleDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_SPARSE_DATA
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetDeath); \
+	DECLARE_FUNCTION(execfinishAttack); \
 	DECLARE_FUNCTION(execAttack);
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSetDeath); \
+	DECLARE_FUNCTION(execfinishAttack); \
 	DECLARE_FUNCTION(execAttack);
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_INCLASS_NO_PURE_DECLS \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseRifle(); \
 	friend struct Z_Construct_UClass_ABaseRifle_Statics; \
@@ -33,7 +50,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseRifle)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_INCLASS \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesABaseRifle(); \
 	friend struct Z_Construct_UClass_ABaseRifle_Statics; \
@@ -42,7 +59,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseRifle)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_STANDARD_CONSTRUCTORS \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABaseRifle(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABaseRifle) \
@@ -55,7 +72,7 @@ private: \
 public:
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_ENHANCED_CONSTRUCTORS \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABaseRifle(ABaseRifle&&); \
@@ -66,33 +83,33 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABaseRifle)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_PRIVATE_PROPERTY_OFFSET \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Mesh() { return STRUCT_OFFSET(ABaseRifle, Mesh); } \
 	FORCEINLINE static uint32 __PPO__BulletClass() { return STRUCT_OFFSET(ABaseRifle, BulletClass); } \
 	FORCEINLINE static uint32 __PPO__SocketName() { return STRUCT_OFFSET(ABaseRifle, SocketName); }
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_10_PROLOG
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_GENERATED_BODY_LEGACY \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_11_PROLOG
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_PRIVATE_PROPERTY_OFFSET \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_SPARSE_DATA \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_RPC_WRAPPERS \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_INCLASS \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_STANDARD_CONSTRUCTORS \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_PRIVATE_PROPERTY_OFFSET \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_SPARSE_DATA \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_RPC_WRAPPERS \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_INCLASS \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_GENERATED_BODY \
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_PRIVATE_PROPERTY_OFFSET \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_SPARSE_DATA \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_INCLASS_NO_PURE_DECLS \
-	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_13_ENHANCED_CONSTRUCTORS \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_PRIVATE_PROPERTY_OFFSET \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_SPARSE_DATA \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_INCLASS_NO_PURE_DECLS \
+	UnrealGame001_Source_UnrealGame001_Public_Actors_BaseRifle_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

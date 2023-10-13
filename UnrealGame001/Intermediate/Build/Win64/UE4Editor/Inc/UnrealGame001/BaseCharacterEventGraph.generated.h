@@ -13,20 +13,31 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UNREALGAME001_BaseCharacterEventGraph_generated_h
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_SPARSE_DATA
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_12_DELEGATE \
+static inline void FAnimDelegate_DelegateWrapper(const FMulticastScriptDelegate& AnimDelegate) \
+{ \
+	AnimDelegate.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_SPARSE_DATA
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execDeathAnimation); \
+	DECLARE_FUNCTION(execHitAnimation); \
 	DECLARE_FUNCTION(execFireAnimation); \
 	DECLARE_FUNCTION(execPersonaUpdate);
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execDeathAnimation); \
+	DECLARE_FUNCTION(execHitAnimation); \
 	DECLARE_FUNCTION(execFireAnimation); \
 	DECLARE_FUNCTION(execPersonaUpdate);
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_INCLASS_NO_PURE_DECLS \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBaseCharacterEventGraph(); \
 	friend struct Z_Construct_UClass_UBaseCharacterEventGraph_Statics; \
@@ -35,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(UBaseCharacterEventGraph)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_INCLASS \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUBaseCharacterEventGraph(); \
 	friend struct Z_Construct_UClass_UBaseCharacterEventGraph_Statics; \
@@ -44,7 +55,7 @@ public: \
 	DECLARE_SERIALIZER(UBaseCharacterEventGraph)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_STANDARD_CONSTRUCTORS \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBaseCharacterEventGraph(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBaseCharacterEventGraph) \
@@ -57,7 +68,7 @@ private: \
 public:
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_ENHANCED_CONSTRUCTORS \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBaseCharacterEventGraph(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -70,35 +81,40 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBaseCharacterEventGraph)
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_PRIVATE_PROPERTY_OFFSET \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Speed); } \
 	FORCEINLINE static uint32 __PPO__Direction() { return STRUCT_OFFSET(UBaseCharacterEventGraph, Direction); } \
 	FORCEINLINE static uint32 __PPO__DebugFire() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DebugFire); } \
+	FORCEINLINE static uint32 __PPO__DebugHit() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DebugHit); } \
+	FORCEINLINE static uint32 __PPO__DebugDeath() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DebugDeath); } \
 	FORCEINLINE static uint32 __PPO__ActionSlotName() { return STRUCT_OFFSET(UBaseCharacterEventGraph, ActionSlotName); } \
-	FORCEINLINE static uint32 __PPO__FireAsset() { return STRUCT_OFFSET(UBaseCharacterEventGraph, FireAsset); }
+	FORCEINLINE static uint32 __PPO__FireAsset() { return STRUCT_OFFSET(UBaseCharacterEventGraph, FireAsset); } \
+	FORCEINLINE static uint32 __PPO__HitAsset() { return STRUCT_OFFSET(UBaseCharacterEventGraph, HitAsset); } \
+	FORCEINLINE static uint32 __PPO__CurrentDeath() { return STRUCT_OFFSET(UBaseCharacterEventGraph, CurrentDeath); } \
+	FORCEINLINE static uint32 __PPO__DeathAssets() { return STRUCT_OFFSET(UBaseCharacterEventGraph, DeathAssets); }
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_12_PROLOG
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_GENERATED_BODY_LEGACY \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_14_PROLOG
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_PRIVATE_PROPERTY_OFFSET \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_SPARSE_DATA \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_INCLASS \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_STANDARD_CONSTRUCTORS \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_PRIVATE_PROPERTY_OFFSET \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_SPARSE_DATA \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_RPC_WRAPPERS \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_INCLASS \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_GENERATED_BODY \
+#define UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_PRIVATE_PROPERTY_OFFSET \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_SPARSE_DATA \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_INCLASS_NO_PURE_DECLS \
-	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_15_ENHANCED_CONSTRUCTORS \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_PRIVATE_PROPERTY_OFFSET \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_SPARSE_DATA \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_INCLASS_NO_PURE_DECLS \
+	UnrealGame001_Source_UnrealGame001_Public_Core_BaseCharacterEventGraph_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

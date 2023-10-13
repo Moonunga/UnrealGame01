@@ -10,14 +10,16 @@
 ABaseRifle::ABaseRifle()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 	Mesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Mesh"));
 	Mesh->SetupAttachment(RootComponent);
 
 	Mesh->SetCollisionProfileName("NoCollision");
 	
-}
+	busy = false;
+	dead = false;
+ }
 
 // Called when the game starts or when spawned
 void ABaseRifle::BeginPlay()
@@ -34,7 +36,7 @@ void ABaseRifle::BeginPlay()
 
 void ABaseRifle::Attack()
 {
-	if (canAttack())
+	if (canAttack() == true)
 	{
 
 		FActorSpawnParameters SpawnParams;
@@ -45,9 +47,15 @@ void ABaseRifle::Attack()
 
 		busy = true;
 
-		FTimerHandle handle;
-		GetWorld()->GetTimerManager().SetTimer(handle, this, &ABaseRifle::finishAttack, 2.f);
+		GetWorld()->GetTimerManager().SetTimer(ResetTimerHandle ,this, &ABaseRifle::finishAttack, 2.f);
+
+		OnBulletCreate.Broadcast(0.0f);
 	}
+}
+
+void ABaseRifle::SetDeath(float junk)
+{
+	dead = true;
 }
 
 bool ABaseRifle::canAttack()
@@ -58,6 +66,8 @@ bool ABaseRifle::canAttack()
 void ABaseRifle::finishAttack()
 {
 	busy = false;
+
+	GetWorld()->GetTimerManager().ClearTimer(ResetTimerHandle);
 }
 
 // Called every frame

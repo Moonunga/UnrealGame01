@@ -13,14 +13,62 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBaseRifle() {}
 // Cross Module References
+	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_UnrealGame001();
 	UNREALGAME001_API UClass* Z_Construct_UClass_ABaseRifle_NoRegister();
 	UNREALGAME001_API UClass* Z_Construct_UClass_ABaseRifle();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	UPackage* Z_Construct_UPackage__Script_UnrealGame001();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UNREALGAME001_API UClass* Z_Construct_UClass_ABaseBullet_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics
+	{
+		struct _Script_UnrealGame001_eventRifleDelegate_Parms
+		{
+			float Amount;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Amount;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_UnrealGame001_eventRifleDelegate_Parms, Amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::NewProp_Amount,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BaseRifle.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_UnrealGame001, nullptr, "RifleDelegate__DelegateSignature", nullptr, nullptr, sizeof(_Script_UnrealGame001_eventRifleDelegate_Parms), Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(ABaseRifle::execSetDeath)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_junk);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetDeath(Z_Param_junk);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseRifle::execfinishAttack)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->finishAttack();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseRifle::execAttack)
 	{
 		P_FINISH;
@@ -33,6 +81,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseRifle() {}
 		UClass* Class = ABaseRifle::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Attack", &ABaseRifle::execAttack },
+			{ "finishAttack", &ABaseRifle::execfinishAttack },
+			{ "SetDeath", &ABaseRifle::execSetDeath },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -55,6 +105,60 @@ void EmptyLinkFunctionForGeneratedCodeBaseRifle() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseRifle_Attack_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseRifle_finishAttack_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseRifle_finishAttack_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BaseRifle.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseRifle_finishAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseRifle, nullptr, "finishAttack", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseRifle_finishAttack_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseRifle_finishAttack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseRifle_finishAttack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseRifle_finishAttack_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseRifle_SetDeath_Statics
+	{
+		struct BaseRifle_eventSetDeath_Parms
+		{
+			float junk;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_junk;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::NewProp_junk = { "junk", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseRifle_eventSetDeath_Parms, junk), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::NewProp_junk,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BaseRifle.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseRifle, nullptr, "SetDeath", nullptr, nullptr, sizeof(BaseRifle_eventSetDeath_Parms), Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseRifle_SetDeath()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseRifle_SetDeath_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -91,6 +195,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseRifle() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseRifle_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseRifle_Attack, "Attack" }, // 374397059
+		{ &Z_Construct_UFunction_ABaseRifle_finishAttack, "finishAttack" }, // 1285925445
+		{ &Z_Construct_UFunction_ABaseRifle_SetDeath, "SetDeath" }, // 3881136892
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseRifle_Statics::Class_MetaDataParams[] = {
@@ -152,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseRifle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseRifle, 2086086905);
+	IMPLEMENT_CLASS(ABaseRifle, 3471292115);
 	template<> UNREALGAME001_API UClass* StaticClass<ABaseRifle>()
 	{
 		return ABaseRifle::StaticClass();

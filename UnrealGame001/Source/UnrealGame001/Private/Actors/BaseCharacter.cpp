@@ -46,9 +46,18 @@ void ABaseCharacter::BeginPlay()
 		Destroy();
 	}
 		
-	//Delegate healthComponent Event
- 	//HealthComponent->OnHurt.AddDynamic(this,)
-
+	//OnBulletCreated delegate
+	CurrentWeapon->OnBulletCreate.AddDynamic(AnimBP, &UBaseCharacterEventGraph::FireAnimation);
+	
+	//OnHurt delegate
+	HealthComponent->OnHurt.AddDynamic(AnimBP,&UBaseCharacterEventGraph::HitAnimation);
+	
+	//OnAnimEnded delegate
+	AnimBP->OnAnimEnded.AddDynamic(CurrentWeapon,&ABaseRifle::finishAttack);
+	
+	//Ondeath delegate
+	HealthComponent->OnDeath.AddDynamic(AnimBP,&UBaseCharacterEventGraph::DeathAnimation);
+	HealthComponent->OnDeath.AddDynamic(CurrentWeapon, &ABaseRifle::SetDeath);
 }
 
 // Called every frame
@@ -71,7 +80,7 @@ void ABaseCharacter::CharacterAttack()
 	CurrentWeapon->Attack();
 	
 	//fire animation
-	AnimBP->FireAnimation();
+	AnimBP->FireAnimation(0.0f);
 
 }
 

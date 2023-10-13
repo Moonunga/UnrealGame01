@@ -13,7 +13,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 // Cross Module References
-	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature();
+	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_UnrealGame001();
 	UNREALGAME001_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 	UNREALGAME001_API UClass* Z_Construct_UClass_UHealthComponent();
@@ -22,9 +22,9 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 // End Cross Module References
-	struct Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics
+	struct Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics
 	{
-		struct _Script_UnrealGame001_eventVariableDelegate_Parms
+		struct _Script_UnrealGame001_eventHealthDelegate_Parms
 		{
 			float Amount;
 		};
@@ -35,24 +35,24 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_UnrealGame001_eventVariableDelegate_Parms, Amount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::NewProp_Amount,
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_UnrealGame001_eventHealthDelegate_Parms, Amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::NewProp_Amount,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
 		{ "Comment", "// Create Event Dispatch\n" },
 		{ "ModuleRelativePath", "Public/Components/HealthComponent.h" },
 		{ "ToolTip", "Create Event Dispatch" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_UnrealGame001, nullptr, "VariableDelegate__DelegateSignature", nullptr, nullptr, sizeof(_Script_UnrealGame001_eventVariableDelegate_Parms), Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_UnrealGame001, nullptr, "HealthDelegate__DelegateSignature", nullptr, nullptr, sizeof(_Script_UnrealGame001_eventHealthDelegate_Parms), Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -199,13 +199,13 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		{ "ToolTip", "Naming Event Dispatch" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnHurt = { "OnHurt", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHealthComponent, OnHurt), Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnHurt_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnHurt_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnHurt = { "OnHurt", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHealthComponent, OnHurt), Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnHurt_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnHurt_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Components/HealthComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath = { "OnDeath", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHealthComponent, OnDeath), Z_Construct_UDelegateFunction_UnrealGame001_VariableDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath = { "OnDeath", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHealthComponent, OnDeath), Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHealthComponent_Statics::NewProp_OnDeath_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UHealthComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHealthComponent_Statics::NewProp_CurrentHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHealthComponent_Statics::NewProp_MaxHealth,
@@ -239,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UHealthComponent, 2243097841);
+	IMPLEMENT_CLASS(UHealthComponent, 4094997430);
 	template<> UNREALGAME001_API UClass* StaticClass<UHealthComponent>()
 	{
 		return UHealthComponent::StaticClass();

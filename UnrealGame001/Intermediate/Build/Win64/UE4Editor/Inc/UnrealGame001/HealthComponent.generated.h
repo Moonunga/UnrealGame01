@@ -17,15 +17,15 @@ class AController;
 #define UNREALGAME001_HealthComponent_generated_h
 
 #define UnrealGame001_Source_UnrealGame001_Public_Components_HealthComponent_h_10_DELEGATE \
-struct _Script_UnrealGame001_eventVariableDelegate_Parms \
+struct _Script_UnrealGame001_eventHealthDelegate_Parms \
 { \
 	float Amount; \
 }; \
-static inline void FVariableDelegate_DelegateWrapper(const FMulticastScriptDelegate& VariableDelegate, float Amount) \
+static inline void FHealthDelegate_DelegateWrapper(const FMulticastScriptDelegate& HealthDelegate, float Amount) \
 { \
-	_Script_UnrealGame001_eventVariableDelegate_Parms Parms; \
+	_Script_UnrealGame001_eventHealthDelegate_Parms Parms; \
 	Parms.Amount=Amount; \
-	VariableDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+	HealthDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 

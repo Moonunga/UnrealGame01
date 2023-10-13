@@ -12,8 +12,6 @@
 
 ABasePlayer::ABasePlayer()
 {
-	//parent construction??
-
 
 	//Springarm setting
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
@@ -79,6 +77,7 @@ void ABasePlayer::BeginPlay()
 
 	//OnDeath delegate
 	HealthComponent->OnDeath.AddDynamic(HUDWidget, &UWidgetHUD::SetHealth);
+
 }
 	
 

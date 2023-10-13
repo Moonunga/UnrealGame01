@@ -9,6 +9,8 @@
 /**
  * 
  */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAnimDelegate);
+
 UCLASS()
 class UNREALGAME001_API UBaseCharacterEventGraph : public UAnimInstance
 {
@@ -26,6 +28,12 @@ protected:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	bool DebugFire;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool DebugHit;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool DebugDeath;
+
 	UFUNCTION()
 	void PersonaUpdate();
 
@@ -35,9 +43,27 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UAnimSequenceBase* FireAsset;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimSequenceBase* HitAsset;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimSequenceBase* CurrentDeath;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<UAnimSequenceBase*> DeathAssets;
+
 public:
 
 	UFUNCTION()
-	void FireAnimation();
+	void FireAnimation(float junk);
+
+	UFUNCTION()
+	void HitAnimation(float junk);
+
+	UFUNCTION()
+	void DeathAnimation(float junk);
+
+
+	FAnimDelegate OnAnimEnded;
 
 };

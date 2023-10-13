@@ -2,11 +2,11 @@
   Building UnrealGame001Editor...
   Using Visual Studio 2022 14.37.32824 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 16 processes...
-    [1/4] BasePlayer.cpp
-    [2/4] UE4Editor-UnrealGame001-0004.lib
-       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0004.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0004.exp
-    [3/4] UE4Editor-UnrealGame001-0004.dll
-       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0004.suppressed.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0004.suppressed.exp
+    [1/4] BaseCharacter.cpp
+    [2/4] UE4Editor-UnrealGame001-0012.lib
+       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0012.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0012.exp
+    [3/4] UE4Editor-UnrealGame001-0012.dll
+       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0012.suppressed.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0012.suppressed.exp
     [4/4] UnrealGame001Editor.target
-  Total time in Parallel executor: 4.50 seconds
-  Total execution time: 5.18 seconds
+  Total time in Parallel executor: 2.39 seconds
+  Total execution time: 3.02 seconds

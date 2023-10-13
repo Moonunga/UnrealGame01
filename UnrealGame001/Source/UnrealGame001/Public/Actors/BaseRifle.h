@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "BaseRifle.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRifleDelegate, float, Amount);
 
 UCLASS()
 class UNREALGAME001_API ABaseRifle : public AActor
@@ -23,8 +24,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 	class USkeletalMeshComponent* Mesh;
 
-	
-
 	UPROPERTY(EditAnywhere , BlueprintReadWrite)
 	TSubclassOf<class ABaseBullet> BulletClass;
 
@@ -33,7 +32,11 @@ protected:
 
 	APawn* ParentPawn;
 
-	bool busy = false;
+	bool busy;
+
+	FTimerHandle ResetTimerHandle;
+
+	bool dead;
 
 public:	
 	// Called every frame
@@ -42,8 +45,17 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Attack();
 
+	FRifleDelegate OnBulletCreate;
+
+	UFUNCTION()
+	void finishAttack();
+
+	UFUNCTION()
+	void SetDeath(float junk);
+
 private:
 	bool canAttack();
 
-	void finishAttack();
+	
+
 };

@@ -7,7 +7,7 @@
 #include "HealthComponent.generated.h"
 
 // Create Event Dispatch
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVariableDelegate, float, Amount);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHealthDelegate, float, Amount);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class UNREALGAME001_API UHealthComponent : public UActorComponent
@@ -36,10 +36,10 @@ public:
 	
 	// Naming Event Dispatch
 	UPROPERTY()
-	FVariableDelegate OnHurt;
+	FHealthDelegate OnHurt;
 
 	UPROPERTY()
-	FVariableDelegate OnDeath;
+	FHealthDelegate OnDeath;
 
 private:
 	UFUNCTION()

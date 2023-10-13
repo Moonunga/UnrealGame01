@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePlayer, 465318904);
+	IMPLEMENT_CLASS(ABasePlayer, 2604995401);
 	template<> UNREALGAME001_API UClass* StaticClass<ABasePlayer>()
 	{
 		return ABasePlayer::StaticClass();

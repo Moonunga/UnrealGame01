@@ -51,19 +51,25 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Jump",EInputEvent::IE_Pressed,this,&ACharacter::Jump);
 }
 
+void ABasePlayer::CharacterDeath(float junk)
+{
+	Super::CharacterDeath(junk);
+	EnableInput(playerController);
+}
+
 void ABasePlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
-	APlayerController* owner = Cast<APlayerController>(GetController());
+	playerController = Cast<APlayerController>(GetController());
 
-	if (!owner)
+	if (!playerController)
 	{
 		UE_LOG(Game, Error, TEXT("Fail CastPlayerController"));
 		Destroy();
 	}
 
-	HUDWidget = CreateWidget<UWidgetHUD>(owner, WidgetClass);
+	HUDWidget = CreateWidget<UWidgetHUD>(playerController, WidgetClass);
 
 	if (!HUDWidget)
 	{

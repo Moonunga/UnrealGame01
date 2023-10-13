@@ -29,7 +29,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealGame001_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x9DE1E06E,
+				0xE8891D83,
 				0xE0DFA856,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UNREALGAME001_BaseCharacter_generated_h
 
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_SPARSE_DATA
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS
-#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCharacterDeath);
+
+
+#define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCharacterDeath);
+
+
 #define UnrealGame001_Source_UnrealGame001_Public_Actors_BaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \

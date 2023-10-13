@@ -47,13 +47,13 @@ void UBaseCharacterEventGraph::PersonaUpdate()
 void UBaseCharacterEventGraph::FireAnimation(float junk)
 {
 	PlaySlotAnimationAsDynamicMontage(FireAsset,ActionSlotName);
-	UE_LOG(Game, Error, TEXT("FireAnimation"));
+	//UE_LOG(Game, Error, TEXT("FireAnimation"));
 }
 
 void UBaseCharacterEventGraph::HitAnimation(float junk)
 {
 	PlaySlotAnimationAsDynamicMontage(HitAsset, ActionSlotName);
-	UE_LOG(Game, Error, TEXT("HitAnimation"));
+	//UE_LOG(Game, Error, TEXT("HitAnimation"));
 }
 
 void UBaseCharacterEventGraph::DeathAnimation(float junk)
@@ -61,6 +61,11 @@ void UBaseCharacterEventGraph::DeathAnimation(float junk)
 	int randomm = FMath::RandRange(0, DeathAssets.Num()-1);
 	//random implement
 	CurrentDeath = DeathAssets[randomm];
+}
+
+void UBaseCharacterEventGraph::AnimEnded()
+{
+	OnAnimEnded.Broadcast();
 }
 
 

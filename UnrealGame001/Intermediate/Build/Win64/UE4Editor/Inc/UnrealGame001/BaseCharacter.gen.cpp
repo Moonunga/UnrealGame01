@@ -23,8 +23,53 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	UNREALGAME001_API UClass* Z_Construct_UClass_UBaseCharacterEventGraph_NoRegister();
 	UNREALGAME001_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseCharacter::execCharacterDeath)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_junk);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CharacterDeath(Z_Param_junk);
+		P_NATIVE_END;
+	}
 	void ABaseCharacter::StaticRegisterNativesABaseCharacter()
 	{
+		UClass* Class = ABaseCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CharacterDeath", &ABaseCharacter::execCharacterDeath },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics
+	{
+		struct BaseCharacter_eventCharacterDeath_Parms
+		{
+			float junk;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_junk;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::NewProp_junk = { "junk", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseCharacter_eventCharacterDeath_Parms, junk), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::NewProp_junk,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Actors/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "CharacterDeath", nullptr, nullptr, sizeof(BaseCharacter_eventCharacterDeath_Parms), Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_CharacterDeath()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_CharacterDeath_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ABaseCharacter_NoRegister()
 	{
@@ -33,6 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	struct Z_Construct_UClass_ABaseCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -63,6 +109,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	UObject* (*const Z_Construct_UClass_ABaseCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_UnrealGame001,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacter_CharacterDeath, "CharacterDeath" }, // 2391977882
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::Class_MetaDataParams[] = {
@@ -123,11 +172,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ABaseCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::PropPointers),
 		0,
 		0x009000A5u,
@@ -142,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 292924492);
+	IMPLEMENT_CLASS(ABaseCharacter, 3990997983);
 	template<> UNREALGAME001_API UClass* StaticClass<ABaseCharacter>()
 	{
 		return ABaseCharacter::StaticClass();

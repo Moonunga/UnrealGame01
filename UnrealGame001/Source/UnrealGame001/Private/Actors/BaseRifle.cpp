@@ -60,7 +60,8 @@ void ABaseRifle::SetDeath(float junk)
 
 bool ABaseRifle::canAttack()
 {
-	return !busy;
+
+	return (!busy && !dead);
 }
 
 void ABaseRifle::finishAttack()

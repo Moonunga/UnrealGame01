@@ -7,15 +7,16 @@
 
 void UFireAnimNotify::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation)
 {
-	animBP = Cast<UBaseCharacterEventGraph>(MeshComp);
-	if (!animBP)
+ 	UE_LOG(Game, Error, TEXT("notify hit"));
+
+	animBP = Cast<UBaseCharacterEventGraph>(Animation);
+	if (animBP != nullptr)
 	{
-		
+		animBP->AnimEnded();
 	}
 	else
 	{
-		animBP->OnAnimEnded.Broadcast();
-		UE_LOG(Game, Error, TEXT("notify success casting animinstance"));
+		UE_LOG(Game, Error, TEXT("cast fail"));
 	}
 	
 }

@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseAI, 294024822);
+	IMPLEMENT_CLASS(ABaseAI, 2063828458);
 	template<> UNREALGAME001_API UClass* StaticClass<ABaseAI>()
 	{
 		return ABaseAI::StaticClass();

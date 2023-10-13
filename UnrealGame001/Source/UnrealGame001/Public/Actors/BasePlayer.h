@@ -18,7 +18,6 @@ public:
 	ABasePlayer();
 	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-
 protected:
 
 	virtual void BeginPlay() override;
@@ -35,7 +34,9 @@ protected:
 	UPROPERTY()
 	class UWidgetHUD* HUDWidget;	
 
+	virtual void CharacterDeath(float junk) override;
 
+	class APlayerController* playerController;
 
 private:
 	void InputAxisForward(float AxisValue);

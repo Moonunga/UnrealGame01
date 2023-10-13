@@ -63,6 +63,7 @@ public:
 	UFUNCTION()
 	void DeathAnimation(float junk);
 
+	void AnimEnded();
 
 	FAnimDelegate OnAnimEnded;
 

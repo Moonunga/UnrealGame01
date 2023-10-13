@@ -34,6 +34,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UHealthComponent* HealthComponent;
 
+	UFUNCTION()
+	virtual void CharacterDeath(float junk);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -44,5 +47,4 @@ public:
 	void CharacterAttack();
 
 	
-
 };

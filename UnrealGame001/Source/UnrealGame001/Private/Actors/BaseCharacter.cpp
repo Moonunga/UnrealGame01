@@ -56,8 +56,8 @@ void ABaseCharacter::BeginPlay()
 	AnimBP->OnAnimEnded.AddDynamic(CurrentWeapon,&ABaseRifle::finishAttack);
 	
 	//Ondeath delegate
-	HealthComponent->OnDeath.AddDynamic(AnimBP,&UBaseCharacterEventGraph::DeathAnimation);
-	HealthComponent->OnDeath.AddDynamic(CurrentWeapon, &ABaseRifle::SetDeath);
+	HealthComponent->OnDeath.AddDynamic(this, &ABaseCharacter::CharacterDeath);
+
 }
 
 // Called every frame
@@ -80,7 +80,14 @@ void ABaseCharacter::CharacterAttack()
 	CurrentWeapon->Attack();
 	
 	//fire animation
-	AnimBP->FireAnimation(0.0f);
+	//AnimBP->FireAnimation(0.0f);
 
+}
+
+void ABaseCharacter::CharacterDeath(float junk)
+{
+	AnimBP->DeathAnimation(junk);
+	CurrentWeapon->SetDeath(junk);
+	this->SetActorEnableCollision(false);
 }
 

@@ -24,6 +24,11 @@ ABaseCharacter::ABaseCharacter()
 
 }
 
+bool ABaseCharacter::PickupHealth()
+{
+	return false;
+}
+
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {

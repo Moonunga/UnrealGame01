@@ -42,17 +42,25 @@ void UHealthComponent::HandleTakeDamage(AActor* DamagedActor, float Damage, cons
 {
 	CurrentHealth = FMath::Clamp(CurrentHealth - Damage, 0.0f, MaxHealth);
 
-	if (CurrentHealth > 0.0f)
+	if (Damage > 0.0f)
 	{
-		//call hurt
-		OnHurt.Broadcast(CurrentHealth / MaxHealth);
+		if (CurrentHealth > 0.0f)
+		{
+			//call hurt
+			OnHurt.Broadcast(CurrentHealth / MaxHealth);
+		}
+		else
+		{
+			// Unbind
+			GetOwner()->OnTakeAnyDamage.RemoveDynamic(this, &UHealthComponent::HandleTakeDamage);
+			// call death
+			OnDeath.Broadcast(0.0f);
+		}
 	}
 	else
 	{
-		// Unbind
-		GetOwner()->OnTakeAnyDamage.RemoveDynamic(this, &UHealthComponent::HandleTakeDamage);
-		// call death
-		OnDeath.Broadcast(0.0f);
+		OnHeal.Broadcast(CurrentHealth / MaxHealth);
+
 	}
 
 }

@@ -51,6 +51,11 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Jump",EInputEvent::IE_Pressed,this,&ACharacter::Jump);
 }
 
+bool ABasePlayer::PickupHealth()
+{
+	return true;
+}
+
 void ABasePlayer::CharacterDeath(float junk)
 {
 	Super::CharacterDeath(junk);
@@ -83,6 +88,9 @@ void ABasePlayer::BeginPlay()
 
 	//OnDeath delegate
 	HealthComponent->OnDeath.AddDynamic(HUDWidget, &UWidgetHUD::SetHealth);
+
+	//OnHeal delegate
+	HealthComponent->OnHeal.AddDynamic(HUDWidget, &UWidgetHUD::SetHealth);
 
 }
 	

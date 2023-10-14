@@ -41,6 +41,9 @@ public:
 	UPROPERTY()
 	FHealthDelegate OnDeath;
 
+	UPROPERTY()
+	FHealthDelegate OnHeal;
+
 private:
 	UFUNCTION()
 	void HandleTakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);

@@ -11,12 +11,13 @@
  * 
  */
 UCLASS()
-class UNREALGAME001_API ABasePlayer : public ABaseCharacter
+class UNREALGAME001_API ABasePlayer : public ABaseCharacter 
 {
 	GENERATED_BODY()
 public:
 	ABasePlayer();
 	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual bool PickupHealth() override;
 
 protected:
 

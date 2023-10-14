@@ -4,16 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Interfaces/PickupInterface.h"
 #include "BaseCharacter.generated.h"
 
 UCLASS(Abstract)
-class UNREALGAME001_API ABaseCharacter : public ACharacter
+class UNREALGAME001_API ABaseCharacter : public ACharacter,public IPickupInterface
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
 	ABaseCharacter();
+
+	virtual bool PickupHealth() override;
 
 protected:
 	// Called when the game starts or when spawned

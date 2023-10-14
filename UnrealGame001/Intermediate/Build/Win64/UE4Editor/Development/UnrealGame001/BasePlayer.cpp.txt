@@ -7,6 +7,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Interfaces/PickupInterface.h
+D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\PickupInterface.generated.h
 D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseCharacter.generated.h
 D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BasePlayer.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h

@@ -26,6 +26,8 @@ ABaseCharacter::ABaseCharacter()
 
 bool ABaseCharacter::PickupHealth()
 {
+	//can I delete here??
+
 	return false;
 }
 
@@ -36,8 +38,8 @@ void ABaseCharacter::BeginPlay()
 	
 	WeaponChildActorComponent->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform,FName("WeaponSocket"));
 	WeaponChildActorComponent->SetChildActorClass(WeaponClass);
+	
 	CurrentWeapon = Cast<ABaseRifle>(WeaponChildActorComponent->GetChildActor());
-
 	if (!CurrentWeapon)
 	{
 		UE_LOG(Game, Error, TEXT("Fail WeaponCast"));

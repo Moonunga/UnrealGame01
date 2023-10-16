@@ -5,7 +5,7 @@
 #include "Components/ChildActorComponent.h"
 #include "../../Public/Actors/BaseRifle.h"
 #include "../../UnrealGame001.h"
-#include "../../Public//Core/BaseCharacterEventGraph.h"
+#include "../../Public/Core/BaseCharacterEventGraph.h"
 #include "../../Public/Components/HealthComponent.h"
 
 

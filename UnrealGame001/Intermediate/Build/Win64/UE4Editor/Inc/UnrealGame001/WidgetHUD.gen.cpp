@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeWidgetHUD() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_UnrealGame001();
 	UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UImage_NoRegister();
 // End Cross Module References
 	void UWidgetHUD::StaticRegisterNativesUWidgetHUD()
 	{
@@ -36,6 +37,10 @@ void EmptyLinkFunctionForGeneratedCodeWidgetHUD() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Health;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Crosshair_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Crosshair;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -61,8 +66,18 @@ void EmptyLinkFunctionForGeneratedCodeWidgetHUD() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UWidgetHUD, Health), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Health_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Health_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Crosshair_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "WidgetHUD" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Widgets/WidgetHUD.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Crosshair = { "Crosshair", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UWidgetHUD, Crosshair), Z_Construct_UClass_UImage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Crosshair_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Crosshair_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UWidgetHUD_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Health,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWidgetHUD_Statics::NewProp_Crosshair,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UWidgetHUD_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UWidgetHUD>::IsAbstract,
@@ -91,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeWidgetHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UWidgetHUD, 3257833107);
+	IMPLEMENT_CLASS(UWidgetHUD, 776541401);
 	template<> UNREALGAME001_API UClass* StaticClass<UWidgetHUD>()
 	{
 		return UWidgetHUD::StaticClass();

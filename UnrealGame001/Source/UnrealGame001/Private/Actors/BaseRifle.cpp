@@ -5,6 +5,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "../../Public/Actors/BaseBullet.h"
 #include "../../UnrealGame001.h"
+#include "../../Public/Widgets/WidgetHUD.h"
 
 // Sets default values
 ABaseRifle::ABaseRifle()
@@ -43,7 +44,7 @@ void ABaseRifle::Attack()
 		SpawnParams.Owner = nullptr;
 		SpawnParams.Instigator = ParentPawn;
 
-		GetWorld()->SpawnActor<ABaseBullet>(BulletClass, Mesh->GetSocketLocation(SocketName), ParentPawn->GetBaseAimRotation(), SpawnParams);
+		GetWorld()->SpawnActor<ABaseBullet>(BulletClass,GetSpawnPoint(), ParentPawn->GetBaseAimRotation(), SpawnParams);
 
 		busy = true;
 
@@ -56,6 +57,11 @@ void ABaseRifle::Attack()
 void ABaseRifle::SetDeath(float junk)
 {
 	dead = true;
+}
+
+FVector ABaseRifle::GetSpawnPoint()
+{
+	return Mesh->GetSocketLocation(SocketName);
 }
 
 bool ABaseRifle::canAttack()

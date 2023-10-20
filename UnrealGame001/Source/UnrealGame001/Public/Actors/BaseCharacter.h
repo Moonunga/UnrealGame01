@@ -16,7 +16,6 @@ public:
 	// Sets default values for this character's properties
 	ABaseCharacter();
 
-	virtual bool PickupHealth() override;
 
 protected:
 	// Called when the game starts or when spawned

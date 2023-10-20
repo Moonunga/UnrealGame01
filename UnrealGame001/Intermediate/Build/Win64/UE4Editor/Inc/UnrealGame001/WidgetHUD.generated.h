@@ -59,7 +59,8 @@ public: \
 
 
 #define UnrealGame001_Source_UnrealGame001_Public_Widgets_WidgetHUD_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(UWidgetHUD, Health); }
+	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(UWidgetHUD, Health); } \
+	FORCEINLINE static uint32 __PPO__Crosshair() { return STRUCT_OFFSET(UWidgetHUD, Crosshair); }
 
 
 #define UnrealGame001_Source_UnrealGame001_Public_Widgets_WidgetHUD_h_12_PROLOG

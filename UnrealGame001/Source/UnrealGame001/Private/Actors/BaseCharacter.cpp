@@ -24,17 +24,12 @@ ABaseCharacter::ABaseCharacter()
 
 }
 
-bool ABaseCharacter::PickupHealth()
-{
-	//can I delete here??
 
-	return false;
-}
 
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {
-	Super::BeginPlay();
+	Super::BeginPlay();	
 	
 	WeaponChildActorComponent->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform,FName("WeaponSocket"));
 	WeaponChildActorComponent->SetChildActorClass(WeaponClass);
@@ -44,6 +39,7 @@ void ABaseCharacter::BeginPlay()
 	{
 		UE_LOG(Game, Error, TEXT("Fail WeaponCast"));
 		Destroy();
+		return;
 	}
 
 	AnimBP = Cast<UBaseCharacterEventGraph>(GetMesh()->GetAnimInstance());
@@ -51,6 +47,7 @@ void ABaseCharacter::BeginPlay()
 	{
 		UE_LOG(Game, Error, TEXT("Fail AnimInstanceCast"));
 		Destroy();
+		return;
 	}
 		
 	//OnBulletCreated delegate

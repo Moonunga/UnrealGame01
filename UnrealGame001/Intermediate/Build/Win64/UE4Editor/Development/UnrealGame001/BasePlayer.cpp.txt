@@ -123,3 +123,5 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\WidgetHUD.generated.h
 D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Private\Actors\../../Public/Components/HealthComponent.h
 D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\HealthComponent.generated.h
+D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Private\Actors\../../Public/Actors/BaseRifle.h
+D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseRifle.generated.h

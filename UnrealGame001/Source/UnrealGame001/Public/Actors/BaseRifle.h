@@ -9,7 +9,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRifleDelegate, float, Amount);
 
 UCLASS()
-class UNREALGAME001_API ABaseRifle : public AActor
+class UNREALGAME001_API ABaseRifle : public AActor 
 {
 	GENERATED_BODY()
 	
@@ -27,6 +27,7 @@ protected:
 	UPROPERTY(EditAnywhere , BlueprintReadWrite)
 	TSubclassOf<class ABaseBullet> BulletClass;
 
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FName SocketName;
 
@@ -37,6 +38,7 @@ protected:
 	FTimerHandle ResetTimerHandle;
 
 	bool dead;
+
 
 public:	
 	// Called every frame
@@ -52,6 +54,8 @@ public:
 
 	UFUNCTION()
 	void SetDeath(float junk);
+
+	FVector GetSpawnPoint();
 
 private:
 	bool canAttack();

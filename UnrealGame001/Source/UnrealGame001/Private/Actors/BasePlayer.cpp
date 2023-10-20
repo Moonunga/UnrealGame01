@@ -8,6 +8,7 @@
 #include "../../UnrealGame001.h"
 #include "../../Public/Widgets/WidgetHUD.h"
 #include "../../Public/Components/HealthComponent.h"
+#include "../../Public/Actors/BaseRifle.h"
 
 
 ABasePlayer::ABasePlayer()
@@ -54,6 +55,11 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 bool ABasePlayer::PickupHealth()
 {
 	return true;
+}
+
+FRotator ABasePlayer::GetBaseAimRotation() const
+{
+	return FRotationMatrix::MakeFromX(HUDWidget->GetDestination() - CurrentWeapon->GetSpawnPoint()).Rotator();
 }
 
 void ABasePlayer::CharacterDeath(float junk)

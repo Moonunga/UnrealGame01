@@ -19,6 +19,8 @@ public:
 	void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual bool PickupHealth() override;
 
+	FRotator GetBaseAimRotation() const override;
+
 protected:
 
 	virtual void BeginPlay() override;

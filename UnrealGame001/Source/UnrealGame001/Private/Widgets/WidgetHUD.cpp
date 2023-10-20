@@ -57,7 +57,6 @@ void UWidgetHUD::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 		SetColor(overnothing);
 	}
 
-	//Outhit.Actor
 }
 
 void UWidgetHUD::SetHealth(float ratio)

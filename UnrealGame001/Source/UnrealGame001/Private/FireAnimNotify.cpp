@@ -7,7 +7,6 @@
 
 void UFireAnimNotify::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation)
 {
- 	UE_LOG(Game, Error, TEXT("notify hit"));
 
 	animBP = Cast<UBaseCharacterEventGraph>(MeshComp->GetAnimInstance());
 	if (animBP != nullptr)

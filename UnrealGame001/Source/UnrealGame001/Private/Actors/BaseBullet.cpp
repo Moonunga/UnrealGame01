@@ -64,12 +64,3 @@ void ABaseBullet::HandleOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 	Destroy();
 }
 
-
-/*
-* factorspawnparameter spawnparms;
-* spawnparms.owner = nullptr;
-* spawnparms.instigator = this;
-* 
-* * getworld->spawnactor<aactor>(classtype,getactor().rotation, actor.location,spawnparms);
-
-*/

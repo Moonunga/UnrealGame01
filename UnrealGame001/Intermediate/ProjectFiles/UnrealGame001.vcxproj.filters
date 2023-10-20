@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealGame001.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{862207C0-3380-4FF9-AE8F-821754916430}</UniqueIdentifier>
+      <UniqueIdentifier>{0AFC4F14-62D9-4B17-85F2-4A05DC4D66DA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealGame001.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B847D27C-998C-4552-8719-F5396361D899}</UniqueIdentifier>
+      <UniqueIdentifier>{4A1F7F8C-D738-4788-A11A-6421448909C6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealGame001">
-      <UniqueIdentifier>{58FC69C7-B848-4E9D-A2BA-C491E0489792}</UniqueIdentifier>
+      <UniqueIdentifier>{1E46C867-EE9C-4A6D-A972-0130CFA7F072}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealGame001\UnrealGame001.Build.cs">
       <Filter>Source\UnrealGame001</Filter>
@@ -39,13 +39,16 @@
       <Filter>Source\UnrealGame001</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Private">
-      <UniqueIdentifier>{39CF251F-B76D-4D2E-82D4-BBEC13AB60AA}</UniqueIdentifier>
+      <UniqueIdentifier>{BEBECE2D-0CA7-4F4B-BE13-A5C9F0312C85}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\CodeGameInstance.cpp">
+      <Filter>Source\UnrealGame001\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\FireAnimNotify.cpp">
       <Filter>Source\UnrealGame001\Private</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Private\Actors">
-      <UniqueIdentifier>{EB2B0521-A5C2-4693-8311-09AD98841E84}</UniqueIdentifier>
+      <UniqueIdentifier>{6F5D07A5-CD39-4141-8484-EE0424DD7BD5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Actors\BaseAI.cpp">
       <Filter>Source\UnrealGame001\Private\Actors</Filter>
@@ -72,37 +75,46 @@
       <Filter>Source\UnrealGame001\Private\Actors</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Private\Components">
-      <UniqueIdentifier>{C38CAF59-6676-4ADA-84BB-6AC2C768C41A}</UniqueIdentifier>
+      <UniqueIdentifier>{297F66AB-E771-4884-8949-21F1FDBC9B53}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Components\HealthComponent.cpp">
       <Filter>Source\UnrealGame001\Private\Components</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Private\Core">
-      <UniqueIdentifier>{211CD984-D6A4-4655-9007-9D80D9430390}</UniqueIdentifier>
+      <UniqueIdentifier>{CB87515C-B4E1-4ABA-98A8-5C9C5B65DE1F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Core\BaseCharacterEventGraph.cpp">
       <Filter>Source\UnrealGame001\Private\Core</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Private\Interfaces">
-      <UniqueIdentifier>{7BDF2D3B-7885-4E7B-9E3D-8BE4E3FFC078}</UniqueIdentifier>
+      <UniqueIdentifier>{2D203FBE-432F-42C5-ACA8-3718617427FF}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Interfaces\PickupInterface.cpp">
       <Filter>Source\UnrealGame001\Private\Interfaces</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Private\Widgets">
-      <UniqueIdentifier>{E1CE5244-0FFD-4BA0-A266-2C7936D78EF8}</UniqueIdentifier>
+      <UniqueIdentifier>{F73F359E-FECF-4556-A925-1EAD560DEE50}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\Widgets\ButtonWithText.cpp">
+      <Filter>Source\UnrealGame001\Private\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\UnrealGame001\Private\Widgets\GameMainMenu.cpp">
+      <Filter>Source\UnrealGame001\Private\Widgets</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\UnrealGame001\Private\Widgets\WidgetHUD.cpp">
       <Filter>Source\UnrealGame001\Private\Widgets</Filter>
     </ClCompile>
     <Filter Include="Source\UnrealGame001\Public">
-      <UniqueIdentifier>{30F5205E-5F64-45F6-86D9-18981F8F1E90}</UniqueIdentifier>
+      <UniqueIdentifier>{E7D11574-EAE6-48D9-855D-0596E8C27DC3}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\CodeGameInstance.h">
+      <Filter>Source\UnrealGame001\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\FireAnimNotify.h">
       <Filter>Source\UnrealGame001\Public</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Public\Actors">
-      <UniqueIdentifier>{A1804201-B234-4FE8-803E-0FD34C78759F}</UniqueIdentifier>
+      <UniqueIdentifier>{A604F6AB-8C02-4BC1-BD6F-D0A2E176FCB7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Actors\BaseAI.h">
       <Filter>Source\UnrealGame001\Public\Actors</Filter>
@@ -129,26 +141,32 @@
       <Filter>Source\UnrealGame001\Public\Actors</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Public\Components">
-      <UniqueIdentifier>{2FF8969E-FC40-46DD-B337-D8B860B4B74E}</UniqueIdentifier>
+      <UniqueIdentifier>{337E0AB7-6CCA-4350-95FF-41B21BCF3A8B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Components\HealthComponent.h">
       <Filter>Source\UnrealGame001\Public\Components</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Public\Core">
-      <UniqueIdentifier>{1733D11B-55A6-4053-89FF-28A6F7904EB2}</UniqueIdentifier>
+      <UniqueIdentifier>{C2C7E566-FFA8-481D-A7E5-3CBCBEFBFB75}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Core\BaseCharacterEventGraph.h">
       <Filter>Source\UnrealGame001\Public\Core</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Public\Interfaces">
-      <UniqueIdentifier>{E1BD029E-7856-4BBF-A247-7491D6F9B145}</UniqueIdentifier>
+      <UniqueIdentifier>{1D192573-B647-4AAA-8492-0EF7B4106AF8}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Interfaces\PickupInterface.h">
       <Filter>Source\UnrealGame001\Public\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\UnrealGame001\Public\Widgets">
-      <UniqueIdentifier>{080C242D-1467-467C-AD29-82928DFB2EE7}</UniqueIdentifier>
+      <UniqueIdentifier>{5CFB1003-75B6-43E7-B6DD-B2994909020A}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\Widgets\ButtonWithText.h">
+      <Filter>Source\UnrealGame001\Public\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\UnrealGame001\Public\Widgets\GameMainMenu.h">
+      <Filter>Source\UnrealGame001\Public\Widgets</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\UnrealGame001\Public\Widgets\WidgetHUD.h">
       <Filter>Source\UnrealGame001\Public\Widgets</Filter>
     </ClInclude>

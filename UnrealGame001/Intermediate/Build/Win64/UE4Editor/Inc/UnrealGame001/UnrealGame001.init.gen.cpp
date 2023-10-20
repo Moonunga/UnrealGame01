@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealGame001_init() {}
 	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature();
 	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature();
 	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_AnimDelegate__DelegateSignature();
+	UNREALGAME001_API UFunction* Z_Construct_UDelegateFunction_UnrealGame001_ButtonDelegate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_UnrealGame001()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -23,14 +24,15 @@ void EmptyLinkFunctionForGeneratedCodeUnrealGame001_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_UnrealGame001_RifleDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_UnrealGame001_HealthDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_UnrealGame001_AnimDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_UnrealGame001_ButtonDelegate__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/UnrealGame001",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x7C341C80,
-				0x33BB1E87,
+				0xED377845,
+				0x79BC352F,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

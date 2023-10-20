@@ -2,20 +2,28 @@
   Parsing headers for UnrealGame001Editor
     Running UnrealHeaderTool "D:\UnrealGame01\UnrealGame001\UnrealGame001.uproject" "D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\UnrealGame001Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\ansdn\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for UnrealGame001Editor in 5.3930776 seconds
+  Reflection code generated for UnrealGame001Editor in 3.30744 seconds
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Binaries\Win64\UE4Editor-UnrealGame001-0001.dll
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Binaries\Win64\UE4Editor-UnrealGame001-0001.pdb
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Binaries\Win64\UE4Editor-UnrealGame001-0002.dll
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Binaries\Win64\UE4Editor-UnrealGame001-0002.pdb
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Binaries\Win64\UE4Editor-UnrealGame001-2912.dll
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Binaries\Win64\UE4Editor-UnrealGame001-2912.pdb
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0001.lib
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0002.lib
+  Deleted hot-reload file: D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-2912.lib
   Building UnrealGame001Editor...
   Using Visual Studio 2022 14.37.32824 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 9 actions with 16 processes...
-    [1/9] UnrealGame001.init.gen.cpp
-    [2/9] BaseRifle.gen.cpp
-    [3/9] BasePlayer.gen.cpp
-    [4/9] BaseCharacter.cpp
-    [5/9] BaseRifle.cpp
-    [6/9] BasePlayer.cpp
-    [7/9] UE4Editor-UnrealGame001-0001.lib
-       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0001.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0001.exp
-    [8/9] UE4Editor-UnrealGame001-0001.dll
-       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0001.suppressed.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001-0001.suppressed.exp
-    [9/9] UnrealGame001Editor.target
-  Total time in Parallel executor: 6.68 seconds
-  Total execution time: 12.77 seconds
+  Building 8 actions with 16 processes...
+    [1/8] UnrealGame001.init.gen.cpp
+    [2/8] ButtonWithText.gen.cpp
+    [3/8] GameMainMenu.gen.cpp
+    [4/8] GameMainMenu.cpp
+    [5/8] ButtonWithText.cpp
+    [6/8] UE4Editor-UnrealGame001.lib
+       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001.exp
+    [7/8] UE4Editor-UnrealGame001.dll
+       Creating library D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001.suppressed.lib and object D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\UE4Editor-UnrealGame001.suppressed.exp
+    [8/8] UnrealGame001Editor.target
+  Total time in Parallel executor: 3.84 seconds
+  Total execution time: 7.78 seconds

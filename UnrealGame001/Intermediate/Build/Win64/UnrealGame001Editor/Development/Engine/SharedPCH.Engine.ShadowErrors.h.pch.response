@@ -254,17 +254,17 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\INCLUDE"
+/I "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.38.33130\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/I D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine
-/Yc"D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/I D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine
+/Yc"D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UnrealGame001Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

@@ -1,15 +1,15 @@
-D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\Definitions.UnrealGame001.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UnrealGame01\UnrealGame001\Source\UnrealGame001/Public/Actors/BaseAI.h
-D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors/BaseCharacter.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Interfaces/PickupInterface.h
-D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\PickupInterface.generated.h
-D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseCharacter.generated.h
-D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseAI.generated.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\Definitions.UnrealGame001.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Source\UnrealGame001/Public/Actors/BaseAI.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors/BaseCharacter.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+D:\EpicGameFolder\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\EpicGameFolder\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\EpicGameFolder\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Interfaces/PickupInterface.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\PickupInterface.generated.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseCharacter.generated.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BaseAI.generated.h

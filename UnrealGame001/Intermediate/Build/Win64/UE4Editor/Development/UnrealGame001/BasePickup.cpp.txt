@@ -1,7 +1,7 @@
-D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\Definitions.UnrealGame001.h
-D:\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors/BasePickup.h
-D:\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BasePickup.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Development\UnrealGame001\Definitions.UnrealGame001.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Source\UnrealGame001\Public\Actors/BasePickup.h
+D:\GithubFolder\UnrealGame01\UnrealGame001\Intermediate\Build\Win64\UE4Editor\Inc\UnrealGame001\BasePickup.generated.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+D:\EpicGameFolder\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\EpicGameFolder\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\EpicGameFolder\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h

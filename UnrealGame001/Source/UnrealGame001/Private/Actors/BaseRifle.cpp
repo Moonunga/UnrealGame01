@@ -44,6 +44,7 @@ void ABaseRifle::Attack()
 		SpawnParams.Owner = nullptr;
 		SpawnParams.Instigator = ParentPawn;
 
+		FVector test = GetSpawnPoint();
 		GetWorld()->SpawnActor<ABaseBullet>(BulletClass,GetSpawnPoint(), ParentPawn->GetBaseAimRotation(), SpawnParams);
 
 		busy = true;
